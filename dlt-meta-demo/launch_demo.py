@@ -3,12 +3,12 @@ import os
 import time
 import uuid
 import argparse
+import base64
+import json
 from databricks_cli.dbfs.api import DbfsApi
 from databricks_cli.configure.config import _get_api_client
 from databricks_cli.configure.provider import EnvironmentVariableConfigProvider
 from databricks_cli.sdk import JobsService, DbfsService, DeltaPipelinesService, WorkspaceService
-import base64
-import json
 
 
 def get_api_client():
