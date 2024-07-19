@@ -8,7 +8,7 @@ draft: false
 ### Databricks Tech Summit FY2024 DEMO:
 This demo will launch auto generated tables(100s) inside single bronze and silver DLT pipeline using dlt-meta.
 
-1. Launch Terminal/Command promt 
+1. Launch Terminal/Command prompt 
 
 2. Install [Databricks CLI](https://docs.databricks.com/dev-tools/cli/index.html)
 
