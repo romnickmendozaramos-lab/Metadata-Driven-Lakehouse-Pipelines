@@ -61,7 +61,7 @@ class DLTMETAFCFDemo(DLTMETARunner):
         return runner_conf
 
     def launch_workflow(self, runner_conf: DLTMetaRunnerConf):
-        created_job = self.create_cloudfiles_workflow_spec(runner_conf)
+        created_job = self.create_snapshot_workflow_spec(runner_conf)
         self.open_job_url(runner_conf, created_job)
 
 
