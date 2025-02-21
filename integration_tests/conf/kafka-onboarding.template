@@ -21,6 +21,29 @@
         "bronze_data_quality_expectations_json_it": "{uc_volume_path}/integration_tests/conf/dqe/iot/bronze_data_quality_expectations.json",
         "bronze_database_quarantine_it": "{uc_catalog_name}.{bronze_schema}",
         "bronze_quarantine_table": "bronze_{run_id}_iot_quarantine",
-        "bronze_quarantine_table_path_it": "{uc_volume_path}/data/bronze/iot_quarantine"
+        "bronze_quarantine_table_path_it": "{uc_volume_path}/data/bronze/iot_quarantine",
+        "bronze_sinks": [
+                {
+                    "name": "bronze_customer_kafka_sink1",
+                    "format": "kafka",
+                    "options": {
+                        "kafka_bootstrap_servers_secrets_scope":"{kafka_sink_secret_scope}",
+                        "kafka_bootstrap_servers_secrets_key":"kafka-bootstrap-servers-plaintext",
+                        "kafka.security.protocol":"PLAINTEXT",
+                        "startingOffsets":"earliest",
+                        "topic":"{kafka_sink_topic}_1"
+                    }
+                },
+                {
+                    "name": "bronze_customer_kafka_sink2",
+                    "format": "kafka",
+                    "options": {
+                        "kafka_bootstrap_servers_secrets_scope":"{kafka_sink_secret_scope}",
+                        "kafka_bootstrap_servers_secrets_key":"kafka-bootstrap-servers-plaintext",
+                        "kafka.security.protocol":"PLAINTEXT",
+                        "topic":"{kafka_sink_topic}_2"
+                    }
+                }
+        ]        
     }
 ]
