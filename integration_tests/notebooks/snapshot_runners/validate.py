@@ -6,7 +6,7 @@ uc_enabled = eval(dbutils.widgets.get("uc_enabled"))
 uc_catalog_name = dbutils.widgets.get("uc_catalog_name")
 output_file_path = dbutils.widgets.get("output_file_path")
 bronze_schema = dbutils.widgets.get("bronze_schema")
-silver_schema = dbutils.widgets.get("_schema")
+silver_schema = dbutils.widgets.get("silver_schema")
 log_list = []
 
 # Assumption is that to get to this notebook Bronze and Silver completed successfully
