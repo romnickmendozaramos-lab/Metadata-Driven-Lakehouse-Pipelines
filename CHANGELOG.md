@@ -2,7 +2,7 @@
 
 ## [v0.0.10]
 ### ⚠️ Breaking Changes
-- **DPM Mode Removal**: Legacy DLT pipelines using the previous DPM mode must be migrated to the default publishing mode before upgrading. This change is metadata-only and doesn't impact existing datasets, but is irreversible.
+- **DPM Mode Flag Removal from v0.0.9**: DLT-META v0.0.9 pipelines using DPM mode flag must be migrated to the default publishing mode before upgrading. This change is metadata-only and doesn't impact existing datasets, but is irreversible.
 - **invoke_dlt_pipeline Argument Changes**: Method arguments now require layer-specific prefixes (bronze_ or silver_) to support apply_changes_from_snapshot in both layers. This affects existing pipeline configurations using the previous argument naming.
 
 ### Migration Guide
