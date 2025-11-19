@@ -558,7 +558,7 @@ class DataflowPipeline:
             dlt.expect_all_or_drop(expect_or_quarantine_dict)(
                 dlt.table(
                     self.write_to_delta,
-                    name=f"{quarantine_table_name}",
+                    name=f"{quarantine_table}",
                     table_properties=self.dataflowSpec.quarantineTableProperties,
                     partition_cols=q_partition_cols,
                     cluster_by=q_cluster_by,
