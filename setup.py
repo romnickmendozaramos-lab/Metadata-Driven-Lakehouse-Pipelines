@@ -78,7 +78,7 @@ INSTALL_REQUIRES = [
 
 DEV_REQUIREMENTS = [
     "flake8==7.3.0",
-    "delta-spark==3.0.0",
+    "delta-spark==4.4.1",
     "pytest>=7.0.0",
     "coverage>=7.0.0",
     "pyspark==3.5.5"
